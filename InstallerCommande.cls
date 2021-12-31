@@ -1,3 +1,4 @@
+
 Class App.InstallerCommande
 {
 
@@ -11,6 +12,7 @@ XData setup
       <Database Name="COMMANDE" Dir="/opt/irisapp/commande/data" Create="yes"/>
     </Configuration>
     <Import File="${SourceDir}" Flags="ck" Recurse="1"/>
+	<Production Name="commande.Production.ProductionCommande"   AutoStart="1" />
   </Namespace>
 </Manifest>
 }

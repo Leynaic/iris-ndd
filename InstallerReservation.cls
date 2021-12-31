@@ -12,6 +12,7 @@ XData setup
       <Database Name="RESERVATION" Dir="/opt/irisapp/reservation/data" Create="yes"/>
     </Configuration>
     <Import File="${SourceDir}" Flags="ck" Recurse="1"/>
+	<Production Name="reservation.Production.ProductionReservation"   AutoStart="1" />
   </Namespace>
 </Manifest>
 }

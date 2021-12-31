@@ -2,76 +2,76 @@ ROUTINE Init.initData
 
 InsertData() public
 {
-    set msg = ##class(msg.ajouterVoitureCatalogueDmde).%New()
-    set voiture = ##class(webObjet.wsCatalogue).%New()
-    set voiture.marque = "Renault"
-    set voiture.modele = "Twingo"
-    set voiture.type = "Berline"
-    set voiture.nbPlaces = "2"
-    set voiture.prix = "10458"
-    set msg.voiture = voiture
-    do ##class(BO.Catalogue).ajouterVoitureCatalogueInit(msg, .reponse)
+    set msg = ##class(commande.msg.ajouterVoitureCatalogueDmde).%New()
+    set catalogue = ##class(commande.webObjet.wsCatalogue).%New()
+    set catalogue.marque = "Renault"
+    set catalogue.modele = "Twingo"
+    set catalogue.type = "Berline"
+    set catalogue.nbPlaces = "2"
+    set catalogue.prix = "10458"
+    set msg.catalogue = catalogue
+    do ##class(commande.BO.Catalogue).ajouterVoitureCatalogueInit(msg, .reponse)
 
-    set voiture = ##class(webObjet.wsCatalogue).%New()
-    set voiture.marque = "Renault"
-    set voiture.modele = "Megane"
-    set voiture.type = "Berline"
-    set voiture.nbPlaces = "5"
-    set voiture.prix = "31258"
-    set msg.voiture = voiture
-    do ##class(BO.Catalogue).ajouterVoitureCatalogueInit(msg, .reponse)
+    set catalogue = ##class(commande.webObjet.wsCatalogue).%New()
+    set catalogue.marque = "Renault"
+    set catalogue.modele = "Megane"
+    set catalogue.type = "Berline"
+    set catalogue.nbPlaces = "5"
+    set catalogue.prix = "31258"
+    set msg.catalogue = catalogue
+    do ##class(commande.BO.Catalogue).ajouterVoitureCatalogueInit(msg, .reponse)
 
-    set voiture = ##class(webObjet.wsCatalogue).%New()
-    set voiture.marque = "Renault"
-    set voiture.modele = "Espace"
-    set voiture.type = "Monospace"
-    set voiture.nbPlaces = "7"
-    set voiture.prix = "52125"
-    set msg.voiture = voiture
-    do ##class(BO.Catalogue).ajouterVoitureCatalogueInit(msg, .reponse)
+    set catalogue = ##class(commande.webObjet.wsCatalogue).%New()
+    set catalogue.marque = "Renault"
+    set catalogue.modele = "Espace"
+    set catalogue.type = "Monospace"
+    set catalogue.nbPlaces = "7"
+    set catalogue.prix = "52125"
+    set msg.catalogue = catalogue
+    do ##class(commande.BO.Catalogue).ajouterVoitureCatalogueInit(msg, .reponse)
 
-    set voiture = ##class(webObjet.wsCatalogue).%New()
-    set voiture.marque = "BMW"
-    set voiture.modele = "X6"
-    set voiture.type = "4x4"
-    set voiture.nbPlaces = "5"
-    set voiture.prix = "75874"
-    set msg.voiture = voiture
-    do ##class(BO.Catalogue).ajouterVoitureCatalogueInit(msg, .reponse)
+    set catalogue = ##class(commande.webObjet.wsCatalogue).%New()
+    set catalogue.marque = "BMW"
+    set catalogue.modele = "X6"
+    set catalogue.type = "4x4"
+    set catalogue.nbPlaces = "5"
+    set catalogue.prix = "75874"
+    set msg.catalogue = catalogue
+    do ##class(commande.BO.Catalogue).ajouterVoitureCatalogueInit(msg, .reponse)
 
-    set voiture = ##class(webObjet.wsCatalogue).%New()
-    set voiture.marque = "BMW"
-    set voiture.modele = "Série 2"
-    set voiture.type = "Cabriolet"
-    set voiture.nbPlaces = "5"
-    set voiture.prix = "48752"
-    set msg.voiture = voiture
-    do ##class(BO.Catalogue).ajouterVoitureCatalogueInit(msg, .reponse)
+    set catalogue = ##class(commande.webObjet.wsCatalogue).%New()
+    set catalogue.marque = "BMW"
+    set catalogue.modele = "Série 2"
+    set catalogue.type = "Cabriolet"
+    set catalogue.nbPlaces = "5"
+    set catalogue.prix = "48752"
+    set msg.catalogue = catalogue
+    do ##class(commande.BO.Catalogue).ajouterVoitureCatalogueInit(msg, .reponse)
 
-    set voiture = ##class(webObjet.wsCatalogue).%New()
-    set voiture.marque = "Peugeot"
-    set voiture.modele = "5008"
-    set voiture.type = "4x4"
-    set voiture.nbPlaces = "7"
-    set voiture.prix = "48985"
-    set msg.voiture = voiture
-    do ##class(BO.Catalogue).ajouterVoitureCatalogueInit(msg, .reponse)
+    set catalogue = ##class(commande.webObjet.wsCatalogue).%New()
+    set catalogue.marque = "Peugeot"
+    set catalogue.modele = "5008"
+    set catalogue.type = "4x4"
+    set catalogue.nbPlaces = "7"
+    set catalogue.prix = "48985"
+    set msg.catalogue = catalogue
+    do ##class(commande.BO.Catalogue).ajouterVoitureCatalogueInit(msg, .reponse)
 
-    set voiture = ##class(webObjet.wsCatalogue).%New()
-    set voiture.marque = "Peugeot"
-    set voiture.modele = "308"
-    set voiture.type = "Berline"
-    set voiture.nbPlaces = "5"
-    set voiture.prix = "28985"
-    set msg.voiture = voiture
-    do ##class(BO.Catalogue).ajouterVoitureCatalogueInit(msg, .reponse)
+    set catalogue = ##class(commande.webObjet.wsCatalogue).%New()
+    set catalogue.marque = "Peugeot"
+    set catalogue.modele = "308"
+    set catalogue.type = "Berline"
+    set catalogue.nbPlaces = "5"
+    set catalogue.prix = "28985"
+    set msg.catalogue = catalogue
+    do ##class(commande.BO.Catalogue).ajouterVoitureCatalogueInit(msg, .reponse)
 
-    set voiture = ##class(webObjet.wsCatalogue).%New()
-    set voiture.marque = "BMW"
-    set voiture.modele = "X1"
-    set voiture.type = "4x4"
-    set voiture.nbPlaces = "5"
-    set voiture.prix = "38752"
-    set msg.voiture = voiture
-    do ##class(BO.Catalogue).ajouterVoitureCatalogueInit(msg, .reponse)
+    set catalogue = ##class(commande.webObjet.wsCatalogue).%New()
+    set catalogue.marque = "BMW"
+    set catalogue.modele = "X1"
+    set catalogue.type = "4x4"
+    set catalogue.nbPlaces = "5"
+    set catalogue.prix = "38752"
+    set msg.catalogue = catalogue
+    do ##class(commande.BO.Catalogue).ajouterVoitureCatalogueInit(msg, .reponse)
 }
