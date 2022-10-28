@@ -1,4 +1,4 @@
-Class REST.Base Extends %CSP.REST [ System = 3 ]
+Class commande.REST.Base Extends %CSP.REST [ System = 3 ]
 {
 
 Parameter CHARSET = "utf-8";
