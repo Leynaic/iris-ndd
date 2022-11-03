@@ -15,7 +15,7 @@ Clone/git pull YOUR repo (NOT THE TEMPLATE) into any local directory e.g. like i
 $ git clone git@github.com:MattCGI/MiageNDD.git
 ```
 
-Open the terminal in this directory and run:
+Open the terminal in this directory and run the command below (Careful, if you are not on a Windows System, change the device value):
 
 ```
 $ docker volume create --driver local --label com.docker.compose.project=install --label com.docker.compose.version=1.29.1 --label com.docker.compose.volume=databases-ndd  --opt type=none --opt device=C:\docker\volumes\databases\ndd --opt o=bind  databases-ndd

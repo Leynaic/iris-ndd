@@ -36,42 +36,12 @@ COPY zpm* ./zpm.xml
 COPY Script* .
 COPY iris.script /tmp/iris.script
 COPY irissession.sh /
-#SHELL ["/irissession.sh"]
-
 
 # run iris and script
 RUN iris start IRIS \
     && iris session IRIS -U %SYS < /tmp/iris.script \
     && iris stop IRIS quietly
 
-
-#RUN \
- # do $SYSTEM.OBJ.Load("InstallerCommande.cls", "ck") \
- #  do $SYSTEM.OBJ.Load("InstallerReservation.cls", "ck") \
- # set sc = ##class(App.InstallerCommande).setup() \
- # set sc = ##class(App.InstallerReservation).setup() \
- # zn "COMMANDE" \
- # do InsertData^Init.initData() \
- # set ^plaque = "AA-001-AA" \
- # zn "%SYS" \
- # write "Create web application ..." \
- # set webName = "/api/reservation" \
- # set webProperties("DispatchClass") = "BS.API" \
- # set webProperties("NameSpace") = "RESERVATION" \
- # set webProperties("Enabled") = 1 \
- # set webProperties("AutheEnabled") = 32 \
- # set sc = ##class(Security.Applications).Create(webName, .webProperties) \
- # write sc \
- # write "Web application "_webName_" has been created!" \
- # write "Create web application ..." \
- # set webName = "/api/commande" \
- # set webProperties("DispatchClass") = "BS.API" \
- # set webProperties("NameSpace") = "COMMANDE" \
- # set webProperties("Enabled") = 1 \
- # set webProperties("AutheEnabled") = 32 \
- # set sc = ##class(Security.Applications).Create(webName, .webProperties) \
- # write sc \
- # write "Web application "_webName_" has been created!" 
 
 # bringing the standard shell back
 SHELL ["/bin/bash", "-c"]
