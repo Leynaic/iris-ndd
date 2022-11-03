@@ -1,16 +1,13 @@
 
-Class App.InstallerCommande
+Class App.DeployerCOMMANDE
 {
 
 XData setup
 {
 <Manifest>
-  <Default Name="SourceDir" Value="/opt/irisapp/Commande/src"/>
+  <Default Name="SourceDir" Value="/opt/irisapp/code/COMMANDE"/>
 
-  <Namespace Name="COMMANDE" Code="COMMANDE" Data="COMMANDE" Create="yes" Ensemble="1">
-    <Configuration>
-      <Database Name="COMMANDE" Dir="/opt/irisapp/commande/data" Create="yes"/>
-    </Configuration>
+  <Namespace Name="COMMANDE" Code="COMMANDE" Data="COMMANDE" Create="no" Ensemble="1">
     <Import File="${SourceDir}" Flags="ck" Recurse="1"/>
 	<Production Name="commande.Production.ProductionCommande"   AutoStart="1" />
   </Namespace>

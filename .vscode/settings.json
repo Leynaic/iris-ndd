@@ -2,10 +2,11 @@
     "files.associations": {
     
         "Dockerfile*": "dockerfile",
+        "*.script": "objectscript"
       },
     "objectscript.conn" :{
-      "ns": "ESB",
-      "active": true,
+      "ns": "COMMANDE",
+      "active": false,
       "docker-compose": {
         "service": "iris",
         "internalPort": 52773
