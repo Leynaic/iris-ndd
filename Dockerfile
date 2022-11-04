@@ -24,7 +24,6 @@ USER ${ISC_PACKAGE_MGRUSER}
 
 RUN git config --global http.sslverify false
 RUN export GIT_SSL_NO_VERIFY=1
-RUN 
 
 COPY Installer* .
 COPY Deployer* .
@@ -35,7 +34,6 @@ COPY  COMMANDE/Init ./code/COMMANDE/Init
 COPY zpm* ./zpm.xml
 COPY Script* .
 COPY iris.script /tmp/iris.script
-COPY irissession.sh /
 
 # run iris and script
 RUN iris start IRIS \
