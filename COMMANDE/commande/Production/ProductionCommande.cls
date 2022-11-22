@@ -12,6 +12,8 @@ XData ProductionDefinition
   </Item>
   <Item Name="ServiceCatalogue" Category="" ClassName="commande.BS.ServiceCatalogue" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="true" Schedule="">
   </Item>
+  <Item Name="commande.BO.VoitureFile" Category="" ClassName="commande.BO.VoitureFile" PoolSize="1" Enabled="true" Foreground="false" Comment="" LogTraceEvents="false" Schedule="">
+  </Item>
 </Production>
 }
 
