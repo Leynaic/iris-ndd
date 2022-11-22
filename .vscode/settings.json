@@ -6,7 +6,7 @@
       },
     "objectscript.conn" :{
       "ns": "COMMANDE",
-      "active": false,
+      "active": true,
       "docker-compose": {
         "service": "iris",
         "internalPort": 52773
@@ -14,8 +14,10 @@
       "links": {
         "CRUD REST spec": "http://localhost:${port}/crud/_spec"
       },
-      "server": "default~iris"
-    }
+      "server": "default~iris",
+      "username": "SuperUser"
+    },
+    "workbench.colorTheme": "InterSystems Default Dark"
     
     
   
